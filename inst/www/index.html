@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Rollcorr OpenCPU app</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- ocpu library -->
+<script src="jquery-1.10.1.min.js"> </script>
+<script src="opencpu.js"> </script>
+
+<!-- optional stuff for the resizable widget -->
+<link href="jqueryui/css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet" media="screen">
+<script src="jqueryui/jquery-ui-1.10.3.custom.js"> </script>
+
+<script>
+//on page ready:
+$(function() {
+  var req = $("#plotdiv").r_fun_plot("rollcorr").fail(function(){
+    alert(req.responseText);
+  });
+  
+  //optional, requires jquery-ui.
+  $("#plotdiv").resizable()    
+});
+</script>
+
+<style>
+#plotdiv {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 900px;
+  height: 600px;
+  border: solid gray 1px;
+}
+</style>
+</head>
+
+<body>
+  
+  <h1>Rollcorr OpenCPU App</h1>
+  
+  <div id="plotdiv"></div>
+  
+</body>
+</html>

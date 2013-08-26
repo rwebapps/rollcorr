@@ -1,0 +1,13 @@
+Package: rollcorr
+Type: OpenCPU Application
+Title: Rollcorr Demo application for OpenCPU
+Version: 1.0
+Date: 2013-07-07
+Author: Eran Raviv, Jeroen Ooms
+Maintainer: Jeroen <jeroenooms@gmail.com>
+Description: OpenCPU
+License: Apache2
+Depends:
+    quantmod
+Collate:
+    'rollcorr.R'
