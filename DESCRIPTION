@@ -9,5 +9,3 @@ Description: OpenCPU
 License: Apache2
 Depends:
     quantmod
-Collate:
-    'rollcorr.R'
