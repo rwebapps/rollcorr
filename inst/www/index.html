@@ -17,7 +17,7 @@
 <script>
 //on page ready:
 $(function() {
-  var req = $("#plotdiv").r_fun_plot("rollcorr").fail(function(){
+  var req = $("#plotdiv").rplot("rollcorr").fail(function(){
     alert(req.responseText);
   });
   
